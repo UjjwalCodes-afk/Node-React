@@ -70,7 +70,7 @@ export const Navbar = ({ setSearchQuery, selectedCategory, setSelectedCategory, 
 
   const handleLogout = () => {
     localStorage.removeItem("jwt_token"); // Remove token or session data
-    navigate("/login"); // Redirect to login page
+    navigate("/"); // Redirect to login page
   };
 
   return (
