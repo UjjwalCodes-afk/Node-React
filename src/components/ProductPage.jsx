@@ -172,7 +172,7 @@ const ProductCard = () => {
                 transition={{ duration: 0.1 }}
               >
                 <img
-                  src={product.prod_image}
+                  src={product.prod_image.startsWith("http") ? product.prod_image : product.prod_image.replace("http://localhost:8080/", "")}
                   alt={product.prod_name}
                   className="w-full h-48 object-cover rounded-md"
                 />
